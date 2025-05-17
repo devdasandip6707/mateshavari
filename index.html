@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>માતેશ્વરી કિરાણા સ્ટોર - શુદ્ધ કિરાણા સામગ્રી</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts - Gujarati Support -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Hind+Siliguri:wght@400;600;700&family=Noto+Sans+Gujarati:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #e67e22;
+            --secondary-color: #f39c12;
+            --dark-color: #333;
+            --light-color: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Poppins', 'Noto Sans Gujarati', sans-serif;
+        }
+        
+        .gujarati-font {
+            font-family: 'Noto Sans Gujarati', sans-serif;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1580913428735-bd3c269d6a82?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh;
+        }
+        
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .product-card {
+            transition: all 0.3s ease;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #eee;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .discount-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+        
+        .traditional-bg {
+            background-color: #fef6e4;
+        }
+        
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="logo-text gujarati-font">માતેશ્વરી કિરાણા સ્ટોર</span>
+                <small class="d-block text-muted" style="font-size: 0.7rem;">Mateshwari Grocery Store</small>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-4">
+                    <li class="nav-item">
+                        <a class="nav-link active gujarati-font" href="#home">હોમ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gujarati-font" href="#products">પ્રોડક્ટ્સ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gujarati-font" href="#categories">કેટેગરીઝ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gujarati-font" href="#about">અમારા વિશે</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gujarati-font" href="#contact">સંપર્ક કરો</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="btn btn-outline-secondary me-2">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-secondary position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            3
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center" id="home">
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4 gujarati-font">શુદ્ધ કિરાણા સામગ્રી</h1>
+                    <p class="lead mb-5 gujarati-font">અમારી દુકાનથી મળે શુદ્ધ અને પારંપારિક કિરાણા સામગ્રી. ઘરે ડિલિવરી ઉપલબ્ધ.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#products" class="btn btn-warning btn-lg px-4 py-2 fw-bold gujarati-font">હમણાં ખરીદો</a>
+                        <a href="#categories" class="btn btn-outline-light btn-lg px-4 py-2 gujarati-font">કેટેગરીઝ જુઓ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 traditional-bg">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="bg-primary p-3 rounded-circle text-white">
+                            <i class="fas fa-truck fa-lg"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1 gujarati-font">મફત ડિલિવરી</h5>
+                            <p class="mb-0 text-muted gujarati-font">500 રૂપિયા થી વધુના ઓર્ડર પર</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="bg-primary p-3 rounded-circle text-white">
+                            <i class="fas fa-undo fa-lg"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1 gujarati-font">સરળ રિટર્ન</h5>
+                            <p class="mb-0 text-muted gujarati-font">7 દિવસની અંદર</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="bg-primary p-3 rounded-circle text-white">
+                            <i class="fas fa-lock fa-lg"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1 gujarati-font">સુરક્ષિત ચુકવણી</h5>
+                            <p class="mb-0 text-muted gujarati-font">100% સુરક્ષિત</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="bg-primary p-3 rounded-circle text-white">
+                            <i class="fas fa-headset fa-lg"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1 gujarati-font">24/7 સપોર્ટ</h5>
+                            <p class="mb-0 text-muted gujarati-font">સમર્પિત સહાય</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Products -->
+    <section class="py-5" id="products">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2 class="fw-bold gujarati-font">લોકપ્રિય ઉત્પાદનો</h2>
+                <p class="text-muted gujarati-font">અમારા સૌથી લોકપ્રિય કિરાણા સામાન</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1586201375761-83865001e1ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Aata">
+                            <div class="discount-badge">10% OFF</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-warning text-dark gujarati-font">આટો/દાળ</span>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title gujarati-font">શુદ્ધ ઘઉંનો આટો</h5>
+                            <p class="card-text text-muted gujarati-font">5kg પેક, નવો પીસેલો</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0 text-success">₹220 <small class="text-muted text-decoration-line-through">₹245</small></h5>
+                                <button class="btn btn-sm btn-outline-primary gujarati-font"><i class="fas fa-plus"></i> ઉમેરો</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Dal">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-warning text-dark gujarati-font">આટો/દાળ</span>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title gujarati-font">તુવેર દાળ</h5>
+                            <p class="card-text text-muted gujarati-font">1kg પેક, શુદ્ધ અને સાફ</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0 text-success">₹120</h5>
+                                <button class="btn btn-sm btn-outline-primary gujarati-font"><i class="fas fa-plus"></i> ઉમેરો</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Oil">
+                            <div class="discount-badge">5% OFF</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-success gujarati-font">તેલ/મસાલા</span>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title gujarati-font">સરસવ તેલ</h5>
+                            <p class="card-text text-muted gujarati-font">1 લિટર, શુદ્ધ અને ફિલ્ટર્ડ</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0 text-success">₹190 <small class="text-muted text-decoration-line-through">₹200</small></h5>
+                                <button class="btn btn-sm btn-outline-primary gujarati-font"><i class="fas fa-plus"></i> ઉમેરો</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Spices">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-success gujarati-font">તેલ/મસાલા</span>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title gujarati-font">હળદર પાવડર</h5>
+                            <p class="card-text text-muted gujarati-font">200gm, શુદ્ધ અને કુદરતી</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0 text-success">₹85</h5>
+                                <button class="btn btn-sm btn-outline-primary gujarati-font"><i class="fas fa-plus"></i> ઉમેરો</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary px-4 py-2 gujarati-font">બધા ઉત્પાદનો જુઓ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-5 traditional-bg" id="categories">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2 class="fw-bold gujarati-font">કેટેગરીઝ</h2>
+                <p class="text-muted gujarati-font">અમારી કિરાણા કેટેગરીઝ બ્રાઉઝ કરો</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Category 1 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card border-0 text-center p-3 bg-white shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                                <i class="fas fa-wheat-awn fa-2x text-primary"></i>
+                            </div>
+                            <h6 class="card-title mb-0 gujarati-font">આટો/દાળ</h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 2 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card border-0 text-center p-3 bg-white shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                                <i class="fas fa-mortar-pestle fa-2x text-primary"></i>
+                            </div>
+                            <h6 class="card-title mb-0 gujarati-font">મસાલા</h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 3 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card border-0 text-center p-3 bg-white shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                                <i class="fas fa-bottle-droplet fa-2x text-primary"></i>
+                            </div>
+                            <h6 class="card-title mb-0 gujarati-font">તેલ</h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 4 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card border-0 text-center p-3 bg-white shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                                <i class="fas fa-cookie fa-2x text-primary"></i>
+                            </div>
+                            <h6 class="card-title mb-0 gujarati-font">બિસ્કિટ</h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 5 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card border-0 text-center p-3 bg-white shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                                <i class="fas fa-mug-hot fa-2x text-primary"></i>
+                            </div>
+                            <h6 class="card-title mb-0 gujarati-font">ચા/કોફી</h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 6 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card border-0 text-center p-3 bg-white shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                                <i class="fas fa-bottle-water fa-2x text-primary"></i>
+                            </div>
+                            <h6 class="card-title mb-0 gujarati-font">પીણાં</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1580913428735-bd3c269d6a82?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Special Offer" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4 gujarati-font">પહેલા ઓર્ડર પર સ્પેશિયલ ડિસ્કાઉન્ટ</h2>
+                    <p class="lead mb-4 gujarati-font">આજે જ સાઇન અપ કરો અને તમારા પહેલા ઓર્ડર પર 15% ડિસ્કાઉન્ટ મેળવો! ઘરે કિરાણા ડિલિવરી સર્વિસ.</p>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="me-3">
+                            <h1 class="display-3 fw-bold">15%</h1>
+                        </div>
+                        <div class="gujarati-font">
+                            <p class="mb-0">ડિસ્કાઉન્ટ</p>
+                            <p class="mb-0">પહેલો ઓર્ડર</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-light btn-lg px-4 py-2 fw-bold text-primary gujarati-font">હમણાં રજિસ્ટર કરો</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5" id="about">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2 class="fw-bold gujarati-font">અમારા ગ્રાહકો શું કહે છે</h2>
+                <p class="text-muted gujarati-font">અમારા સંતુષ્ટ ગ્રાહકોની સમીક્ષાઓ</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Testimonial 1 -->
+                <div class="col-md-4">
+                    <div class="card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Customer" class="rounded-circle me-3" width="60">
+                            <div>
+                                <h5 class="mb-1 gujarati-font">સીમા પટેલ</h5>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-muted gujarati-font">"માતેશ્વરી કિરાણા સ્ટોરથી ખરીદી કરવી હંમેશા સારો અનુભવ રહ્યો છે. ઉત્પાદનોની ગુણવત્તા ખૂબ જ સારી છે અને ડિલિવરી સમયસર થાય છે."</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="col-md-4">
+                    <div class="card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Customer" class="rounded-circle me-3" width="60">
+                            <div>
+                                <h5 class="mb-1 gujarati-font">રાહુલ શાહ</h5>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-muted gujarati-font">"વ્યસ્ત જીવનશૈલીના કારણે મને સમય નહોતો મળતો, પરંતુ હવે માતેશ્વરી કિરાણા સ્ટોરથી ઓર્ડર કરીને સમયની બચત થાય છે."</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="col-md-4">
+                    <div class="card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer" class="rounded-circle me-3" width="60">
+                            <div>
+                                <h5 class="mb-1 gujarati-font">પ્રિયંકા જોશી</h5>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-muted gujarati-font">"સૌથી સારી બાબત એ છે કે અહીંના ઉત્પાદનો સંપૂર્ણ શુદ્ધ અને પ્રમાણિત છે. બીજી દુકાનોની તુલનામાં કિંમત પણ યોગ્ય છે."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3 gujarati-font">અમારા ન્યૂઝલેટરની સબ્સ્ક્રાઇબ કરો</h2>
+                    <p class="lead mb-4 gujarati-font">નવીનતમ ઑફર અને અપડેટ સીધા તમારા ઇનબૉક્સમાં મેળવો.</p>
+                    <form class="row g-2 justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control form-control-lg" placeholder="તમારું ઇમેઇલ એડ્રેસ">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-light btn-lg w-100 fw-bold gujarati-font">સબ્સ્ક્રાઇબ કરો</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer class="footer pt-5 pb-3" id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-4 gujarati-font">
+                        <i class="fas fa-store me-2"></i>માતેશ્વરી કિરાણા સ્ટોર
+                    </h4>
+                    <p class="text-light gujarati-font">તમારો વિશ્વસનીય પારંપારિક કિરાણા સ્ટોર, શુદ્ધ અને પ્રમાણિત ઉત્પાદનો સાથે.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-whatsapp fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="fw-bold mb-4 gujarati-font">ઝડપી લિંક્સ</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-decoration-none text-light gujarati-font">હોમ</a></li>
+                        <li class="mb-2"><a href="#products" class="text-decoration-none text-light gujarati-font">પ્રોડક્ટ્સ</a></li>
+                        <li class="mb-2"><a href="#categories" class="text-decoration-none text-light gujarati-font">કેટેગરીઝ</a></li>
+                        <li class="mb-2"><a href="#about" class="text-decoration-none text-light gujarati-font">અમારા વિશે</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-decoration-none text-light gujarati-font">સંપર્ક કરો</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="fw-bold mb-4 gujarati-font">ગ્રાહક સેવા</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-light gujarati-font">મારું એકાઉન્ટ</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-light gujarati-font">ઓર્ડર ટ્રેકિંગ</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-light gujarati-font">રિટર્ન પોલિસી</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-light gujarati-font">પ્રાઈવેસી પોલિસી</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="fw-bold mb-4 gujarati-font">અમારો સંપર્ક કરો</h5>
+                    <ul class="list-unstyled text-light">
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i> કિરાણા બજાર, મુખ્ય રોડ, શહેર
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone me-2"></i> +91 98765 43210
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2"></i> info@mateshwarikaryana.com
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-clock me-2"></i> સોમ-શનિ: સવાર 9:00 - રાત 9:00
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-secondary">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-light gujarati-font">&copy; 2023 માતેશ્વરી કિરાણા સ્ટોર. સર્વાધિકાર સુરક્ષિત.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <img src="https://via.placeholder.com/300x50?text=Payment+Methods" alt="Payment Methods" class="img-fluid" style="height: 30px;">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https
